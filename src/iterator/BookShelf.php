@@ -36,4 +36,9 @@ class BookShelf
     {
         return new BookShelfIterator($this);
     }
+
+    public function getIterator_FILO(): BookShelfIterator_FILO
+    {
+        return new BookShelfIterator_FILO($this);
+    }
 }
